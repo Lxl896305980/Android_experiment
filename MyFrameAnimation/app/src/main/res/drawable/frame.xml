@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/blue_ocean" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean1" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean2" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean3" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean4" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean5" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean6" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean7" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean8" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean9" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean10" android:duration="120"/>
+    <item android:drawable="@drawable/blue_ocean11" android:duration="120"/>
+
+</animation-list>
