@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
@@ -42,16 +43,64 @@ public class MainActivity extends AppCompatActivity {
 //        textView.setPivotX(50);
 //        textView.setPivotY(50);
 
-        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(textView,
-                "translation",0,100);
+        //缩放、透明度渐变、平移、旋转集合
+        final AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(
 
-        textView.setTranslationX(0);
-        textView.setTranslationY(0);
+                ObjectAnimator.ofFloat(textView, "scaleX", 0, 5)
+                        .setDuration(6000),
+                ObjectAnimator.ofFloat(textView, "scaleY", 0, 5)
+                        .setDuration(6000),
+                ObjectAnimator.ofFloat(textView,"alpha",0,1)
+                        .setDuration(6000),
+                ObjectAnimator.ofFloat(textView,"translationX",0,50)
+                        .setDuration(6000),
+                ObjectAnimator.ofFloat(textView,"translationY",0,50)
+                        .setDuration(6000),
+                ObjectAnimator.ofFloat(textView,"rotation",0,360)
+                        .setDuration(6000)
 
-        objectAnimator.setDuration(6000);
-        objectAnimator.start();
+        );
+        animatorSet.start();
 
-        objectAnimator.addListener(new Animator.AnimatorListener() {
+
+//        objectAnimator.setDuration(6000);
+//        objectAnimator.start();
+//
+//        objectAnimator.addListener(new Animator.AnimatorListener() {
+//            //动画开始时调用
+//            @Override
+//            public void onAnimationStart(Animator animator) {
+//
+//            }
+//
+//            //动画结束时调用
+//            @Override
+//            public void onAnimationEnd(Animator animator) {
+//
+//            }
+//
+//            //动画取消时调用
+//            @Override
+//            public void onAnimationCancel(Animator animator) {
+//
+//            }
+//
+//            //动画重复时调用
+//            @Override
+//            public void onAnimationRepeat(Animator animator) {
+//
+//            }
+//        });
+//
+//        objectAnimator.addListener(new AnimatorListenerAdapter() {
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//                super.onAnimationStart(animation);
+//            }
+//        });
+
+        animatorSet.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animator) {
 
@@ -73,10 +122,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        objectAnimator.addListener(new AnimatorListenerAdapter() {
+        animatorSet.addListener(new AnimatorListenerAdapter() {
             @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
+            public void onAnimationResume(Animator animation) {
+                super.onAnimationResume(animation);
             }
         });
 
