@@ -5,27 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:onClick="skip2Second"
-        android:text="跳转到第二个页面"
+    <EditText
+        android:id="@+id/pay_input_box"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="请输入充值金额"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:text="传递对象到另一个界面"
-        android:onClick="deliverObject"
+        android:id="@+id/start_pay_btn"
+        android:text="确定充值"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:text="打电话给10086"
-        android:onClick="call"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:text="发短信给10086"
-        android:onClick="sendMsg"
+        android:id="@+id/cancel_pay_btn"
+        android:text="取消充值"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

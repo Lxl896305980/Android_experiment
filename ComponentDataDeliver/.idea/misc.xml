@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Android Projuct/ComponentDataDeliver/app/src/main/res/layout/activity_login.xml" value="0.21" />
         <entry key="..\:/Android/Android Projuct/ComponentDataDeliver/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/Android Projuct/ComponentDataDeliver/app/src/main/res/layout/activity_msg.xml" value="0.10597826086956522" />
+        <entry key="..\:/Android/Android Projuct/ComponentDataDeliver/app/src/main/res/layout/activity_register.xml" value="0.10597826086956522" />
         <entry key="..\:/Android/Android Projuct/ComponentDataDeliver/app/src/main/res/layout/activity_second.xml" value="0.1778115501519757" />
       </map>
     </option>

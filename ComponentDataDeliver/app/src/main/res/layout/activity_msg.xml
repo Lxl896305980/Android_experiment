@@ -5,27 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:onClick="skip2Second"
-        android:text="跳转到第二个页面"
+    <EditText
+        android:id="@+id/receiver_phone_number_oi"
+        android:maxLines="1"
+        android:hint="接收者"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/msg_content_et"
+        android:hint="输入信息"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:text="传递对象到另一个界面"
-        android:onClick="deliverObject"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:text="打电话给10086"
-        android:onClick="call"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:text="发短信给10086"
-        android:onClick="sendMsg"
+        android:id="@+id/sent_msg_btn"
+        android:text="发送信息"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

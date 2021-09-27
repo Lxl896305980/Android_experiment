@@ -2,6 +2,7 @@ package com.example.componentdatadeliver;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
@@ -22,6 +23,15 @@ public class SecondActivity extends AppCompatActivity {
             boolean booleanValue = intent.getBooleanExtra("booleanKey" , false);
             Log.d(TAG, "int vale == " + inValue);
             Log.d(TAG, "boolean == " + booleanValue);
+
+            User user = intent.getParcelableExtra("userKey");
+
+            if(user != null){
+                Log.d(TAG, "userName == " + user.getName());
+                Log.d(TAG, "userAge == " + user.getAge());
+                Log.d(TAG, "userTall == " + user.getTall());
+            }
+
         }
     }
 }
