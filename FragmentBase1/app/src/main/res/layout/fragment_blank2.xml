@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/textview"
-        android:text="第二个个Fragment"
+        android:text="第二个Fragment"
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 

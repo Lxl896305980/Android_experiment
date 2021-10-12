@@ -57,9 +57,16 @@ public class Skip2BrowserActivity extends AppCompatActivity {
         Log.e(TAG,"skip2BrowserInvisible");
 
         Intent intent = new Intent();
+
+//        <intent-filter>
+//                <action android:name="android.intent.action.SEARCH" />
+//                <category android:name="android.intent.category.DEFAULT" />
+//            </intent-filter>
+
         intent.setAction("android.intent.action.SEARCH");
         intent.addCategory("android.intent.category.DEFAULT");
         intent.setPackage("com.android.browser");
+
         //下面代码用于只打开应用不需要跳转到指定页面时
         //intent = getPackageManager().getLaunchIntentForPackage("com.example.recyclerviewdemo");
         startActivity(intent);
